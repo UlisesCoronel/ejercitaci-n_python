@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Commissioner:wght@200;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Color selector</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="title">Color selector with Javascript</h1>
+      <div class="intro">
+        <p>Aplicación de práctica utilizando Javascript, CSS y HTML.</p>
+        <p>
+          Por favor, selecciona un color aquí abajo y luego presiona el
+          botón <b>visualizar</b>. Obtendrás el código hexadecimal del color.
+          Además, el código del color será copiado a tu portapapeles
+        </p>
+      </div>
+
+      <label for="colorSelector" class="colorLabel">Selecciona tu color</label>
+      <input
+        type="color"
+        name="colorSelector"
+        id="colorSelector"
+        value="#fdd053"
+      />
+      <button class="button">VISUALIZAR</button>
+      <p class="colorSelected">#fdd053</p>
+      <p class="clipboard">Aún no seleccionaste nada</p>
+      <div class="colorBox" id="colorBox"></div>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>
